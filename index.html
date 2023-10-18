@@ -6,13 +6,19 @@
 	<title>BRANDON J. CHU</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/arrow.css">
 	<style type="text/css">
 		html{
 			font-size: 16px;
 		}
-		@media all and (max-width: 40em) { 
+		@media all and (max-width: 48em) { 
 			html{ 
 				font-size: 14px;
+			} 
+		}
+		@media all and (max-width: 36em) { 
+			html{ 
+				font-size: 12px;
 			} 
 		}
 		body{
@@ -39,15 +45,11 @@
   			white-space: nowrap;
   		}
 
-
   		main{
   			display: flex;
   			flex-direction: column;
   			gap:8rem;
   			margin-bottom: 2rem;
-  		}
-  		section{
-/*  			margin-bottom: 8rem;*/
   		}
   		section > header{
 			margin-bottom: 1rem;
@@ -126,37 +128,6 @@
   		a:hover{
   			opacity: 0.5;
   		}
-  		.arrDown{
-  			position: relative;
-  			padding-right: 0.75rem;
-  		}
-  		.arrDown:after{
-  			content: "";
-  			position: absolute;
-  			width:calc(1rem - 6px);
-  			height:calc(1rem - 4.5px);
-  			margin-left: 2px;
-  			top:3.5px;
-  			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAgMTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwIDEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+Cgk8cGF0aCBkPSJNOC41LDFMNSwxMC4yTDEuNSwxSDguNSBNMTAsMEgwbDUsMTNMMTAsMEwxMCwweiIvPgo8L3N2Zz4K");
-  			background-size: 100% 100%;
-  			background-repeat: no-repeat;
-  		}
-  		.arrRight{
-  			position: relative;
-  			padding-right: 1rem;
-		}
-		.arrRight:after{
-			content: "";
-  			position: absolute;
-  			width:12px;
-  			height:10px;
-  			margin-left: 4px;
-  			top:4.5px;
-  			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMiAxMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIgMTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMSwxLjVMOS40LDVMMSw4LjVWMS41IE0wLDB2MTBsMTItNUwwLDBMMCwweiIvPgo8L2c+Cjwvc3ZnPgo=");
-  			background-size: 100% 100%;
-  			background-repeat: no-repeat;
-		}
-
   		details{
 /*  			position: absolute;*/
   		}
