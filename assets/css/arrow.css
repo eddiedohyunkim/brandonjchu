@@ -58,6 +58,7 @@
 	}	
 }
 
+/* FONT SIZE 12PX */
 @media all and (max-width: 36em) { 
 	.arrDown:after{
 		width: 7px;
