@@ -64,7 +64,11 @@
 	}
 	.arrRight:after{
 		margin:0 0 0 3px;
+		top:   3px;
 		background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgOSA3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5IDc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZD0iTTAuNywxTDcsMy41TDAuNyw1LjlWMSBNMCwwdjdsOS0zLjVMMCwwTDAsMHoiLz4KPC9zdmc+Cg==");
+	}
+	.arrRight{
+		color:red;
 	}
 }
 
