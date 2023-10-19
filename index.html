@@ -68,11 +68,12 @@
 		}
   		.captions{
     		margin-left: 1rem;
-    		/*max-width: 64rem;
-    		column-gap: 2rem;
-  			column-count: auto;
-  			column-width: 20rem;*/
   		}
+  		@media all and (max-width: 36rem) { 
+			.captions{
+				margin-left: 0;
+			}
+		}
   		ol{
   			list-style-type: none;
 			counter-reset: index;
@@ -128,10 +129,8 @@
   		a:hover{
   			opacity: 0.5;
   		}
-  		details{
-/*  			position: absolute;*/
-  		}
   		details summary{
+  			width:fit-content;
   			cursor: pointer;
   		}
 		details summary::-webkit-details-marker {
@@ -158,7 +157,7 @@
 			transform-origin: 0 0.4rem;
 			transform: scaleY(0.75);
 		}
-		sup{
+		sub{
 			font-size: 0.8rem;
 		}
 	</style>
@@ -586,7 +585,7 @@
 				let captionList = document.createElement('li');
 				captionList.innerHTML = captionArr[i][0] + " ";
 
-				let photoBy = document.createElement('sup');
+				let photoBy = document.createElement('sub');
 				photoBy.innerHTML = captionArr[i][1];
 
 				captionList.appendChild(photoBy);
