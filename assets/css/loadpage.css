@@ -67,7 +67,8 @@ figure{
 }
 img{
 	display: block;
-	margin:1rem auto 1rem auto;
+	margin:auto;
+	padding:1rem 0;
 	width: 100%;
 	height:100%;
 	object-fit: contain;
