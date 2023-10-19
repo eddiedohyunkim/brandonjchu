@@ -6,7 +6,7 @@
 	<title>BRANDON J. CHU</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/arrow.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/arrow.css"> -->
 	<style type="text/css">
 		html{
 			font-size: 16px;
@@ -140,11 +140,23 @@
 		details > summary:first-of-type {
 			list-style-type: none;
 		}
-		details > div{
-/*			border:1px solid red;*/
+		summary:after, .arrDown:after{
+			content:'▽';
+			font-family: 'arrow';
+			display: inline-block;
+			transform-origin: center;
+			transform: scaleX(0.7);
 		}
 		details[open] summary:after{
-			transform: scaleY(-1);
+			content:'△';
+		}
+		.arrRight:after{
+			content:'▷';
+			font-family: 'arrow';
+			display: inline-block;
+			margin: 0 0.1rem 0 0.2rem;
+			transform-origin: 0 0.4rem;
+			transform: scaleY(0.75);
 		}
 		sup{
 			font-size: 0.8rem;
@@ -160,7 +172,7 @@
 		<a href="" class="arrDown">Contact</a> -->
 		<h1><a href="/">Brandon J.&thinsp;Chu</a></h1>
 		<details>
-  			<summary class="arrDown">Info</summary>
+  			<summary>Info</summary>
   			<div>
   				<p>Brandon J. Chu is a fashion designer in New York, New York.</p>
   				<p>
@@ -177,13 +189,13 @@
 	<section>
 		<header>
 			<h2><span>Collection</span></h2>
-			<h3><span class="arrRight">Homme Body, 2023</span> Editorial</h3>
+			<h3><span class="arrRight">Homme Body, 2023</span>Editorial</h3>
 		</header>
 		<div class="imgGrid">
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Payusu-Profile-Shot.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_1--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -191,7 +203,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Payusu-Side-View-Shot.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_2--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -199,7 +211,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Timothy-Profile-Shot.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_3--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -207,7 +219,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Timothy-Side-View-Shot.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_4--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -215,7 +227,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Payusu-Editorial-1.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_5--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -223,7 +235,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Ross-Editorial-2.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_6--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -231,7 +243,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Payusu-Editorial-3.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_7--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -239,7 +251,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Ross-Editorial-4.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_8--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -247,7 +259,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Timothy-Editorial-5.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_9--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -255,7 +267,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Payusu-Editorial-6.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_10--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -263,7 +275,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Ross-Editorial-7.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_11--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -271,7 +283,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez-Derby_s-Front.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_12--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -279,7 +291,15 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez-Derby_s-Side.webp">
+						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez_Derby_1_in_collaboration_with_Batrachotoxin.webp">
+					</a>
+				</div>
+				<figcaption></figcaption>
+			</figure>
+			<figure>
+				<div>
+					<a href="#">
+						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez_Derby_2_in_collaboration_with_Batrachotoxin.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -290,13 +310,13 @@
 	<section>
 		<header>
 			<h2>Collection</h2>
-			<h3><span class="arrRight">Homme Body, 2023</span> Lookbook</h3>
+			<h3><span class="arrRight">Homme Body, 2023</span>Lookbook</h3>
 		</header>
 		<div class="imgGrid">
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Payusu-in-Look-1.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_1_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -304,7 +324,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Ross-in-Look-2.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_2_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -312,7 +332,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Payusu-in-Look-3.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_3_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -320,7 +340,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Timothy-in-Look-4.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_4_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>	
 				<figcaption></figcaption>
@@ -328,7 +348,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Ross-in-Look-5.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_5_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -336,7 +356,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Ross-in-Look-6.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_6_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -344,7 +364,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Ross-in-Look-7.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_7_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -352,7 +372,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/homme-body/lookbook/Payusu-in-Look-8.webp">
+						<img loading="lazy" src="assets/images/homme-body/lookbook/HOMME_BODY_Look_8_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -477,13 +497,13 @@
 	<section>
 		<header>
 			<h2>Collection</h2>
-			<h3><span class="arrRight">Untitled, 2022</span> Editorial&VeryThinSpace;/&VeryThinSpace;Lookbook</h3>
+			<h3><span class="arrRight">Untitled, 2022</span>Editorial&VeryThinSpace;/&VeryThinSpace;Lookbook</h3>
 		</header>
 		<div class="imgGrid">
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-1.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_1--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -491,7 +511,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-2.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_2--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -499,7 +519,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-3.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_3--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -507,7 +527,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-4.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_4--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -515,7 +535,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-5.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_5--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -523,7 +543,7 @@
 			<figure>
 				<div>
 					<a href="#">
-						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Editorial-6.webp">
+						<img loading="lazy" src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_6--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -581,17 +601,21 @@
 			let arr = [];
 			const allImgs = [...section.getElementsByTagName('img')];
 			allImgs.forEach((img) => {
-				// get filename from src
+				// CAPTION
 				let path = img.src;
-					// remove file path, extension from src 
+				// remove file path, extension from src 
 				let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
-					// change hyphens to spaces
-				filename = filename.replace(/-/g, ' ');
+				// change hyphens to spaces
+				filename = filename.replace(/_/g, ' ');
 
-				// get photographer
-				// let photographer = img.getAttribute('data-photoBy');
-				// let photoCredit = 'Photo By ' + photographer;
-				let photoCredit = 'Photo By John Doe';
+				// PHOTOGRAPHER: must be after "shot by"
+				filename = filename.toLowerCase();
+				let photoCredit = ''
+				if ( filename.includes('shot by') ){
+					split = filename.split('--');
+					filename = split[0];
+					photoCredit = split[1];
+				}
 				arr.push([filename, photoCredit]);
 			});
 			return arr;
