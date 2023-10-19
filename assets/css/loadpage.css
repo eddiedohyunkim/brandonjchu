@@ -29,7 +29,7 @@ body > header{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	gap:0.75rem;
-	margin-bottom: 1.2rem;
+/*	margin-bottom: 1.2rem;*/
 	z-index:9999;
 }
 
