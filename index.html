@@ -74,32 +74,14 @@
 				margin-left: 0;
 			}
 		}
-  		ol{
-  			list-style-type: none;
-			counter-reset: index;
-		}
-		ol li{ 
-			position: relative;
-			counter-increment: index;
-			padding-left: 1.5rem;
-		}
-		
-		ol li:before{ 
-			position: absolute;
-			content: counter(index) ".";
-			margin-left: -1.5em;
-		}
+
 
 		figure > div{
 			aspect-ratio: 1 / 1;
 			width:100%;
 			max-width: 100%;
 			background-color: white;
-/*			border: 1px solid black;*/
 		}
-		figure a:hover{
-/*  			filter: grayscale(1) contrast(200%);*/
-  		}
 
 
 		.imgGrid {
@@ -122,6 +104,9 @@
     		max-width: 100%;
     		max-height: 100%;
   		}
+  		figure a:hover{
+  			filter: invert(100%) grayscale(100%) ;
+  		}
 
 
 
@@ -129,6 +114,21 @@
   		a:hover{
   			opacity: 0.5;
   		}
+  		ol{
+  			list-style-type: none;
+			counter-reset: index;
+		}
+		ol li{ 
+			position: relative;
+			counter-increment: index;
+			padding-left: 1.5rem;
+		}
+		
+		ol li:before{ 
+			position: absolute;
+			content: counter(index) ".";
+			margin-left: -1.5em;
+		}
   		details summary{
   			width:fit-content;
   			cursor: pointer;
@@ -139,6 +139,10 @@
 		details > summary:first-of-type {
 			list-style-type: none;
 		}
+		@media all and (max-width: 32rem) { 
+
+		}
+		
 		summary:after, .arrDown:after{
 			content:'▽';
 			font-family: 'arrow';
@@ -164,11 +168,6 @@
 </head>
 <body>
 	<header>
-		<!-- <h1><a href="/">Brandon J. Chu</a>,&nbsp;<a href="">Bio</a>,&nbsp;<a href="">Contact</a></h1> -->
-
-		<!-- <h1><a href="/">Brandon J. Chu</a></h1>
-		<a href="" class="arrDown">INFO</a>
-		<a href="" class="arrDown">Contact</a> -->
 		<h1><a href="/">Brandon J.&thinsp;Chu</a></h1>
 		<details>
   			<summary>Info</summary>
@@ -193,7 +192,7 @@
 		<div class="imgGrid">
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_1--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_1--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -201,7 +200,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_2--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_2--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -209,7 +208,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_3--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_3--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -217,7 +216,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_4--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_4--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -225,7 +224,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_5--Shot_by_Didier_Osias">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_5--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
@@ -233,7 +232,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_6--Shot_by_Didier_Osias">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_6--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
@@ -241,7 +240,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_7--Shot_by_Didier_Osias">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_7--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
@@ -249,7 +248,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_8--Shot_by_Didier_Osias">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_8--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
@@ -257,7 +256,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_9--Shot_by_Didier_Osias">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_9--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
@@ -265,7 +264,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_10--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_10--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -273,7 +272,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_11--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_11--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -281,7 +280,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#HOMME_BODY_Editorial_12--Shot_by_Phi_Vu">
 						<img loading="lazy" src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_12--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
@@ -289,7 +288,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#Cortez_Derby_1_in_collaboration_with_Batrachotoxin">
 						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez_Derby_1_in_collaboration_with_Batrachotoxin.webp">
 					</a>
 				</div>
@@ -297,7 +296,7 @@
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
+					<a href="/homme-body-editorial/#Cortez_Derby_1_in_collaboration_with_Batrachotoxin">
 						<img loading="lazy" src="assets/images/homme-body/editorial/Cortez_Derby_2_in_collaboration_with_Batrachotoxin.webp">
 					</a>
 				</div>

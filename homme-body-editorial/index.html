@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BRANDON J. CHU</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+	<style type="text/css">
+		html{
+			font-size: 16px;
+		}
+		@media all and (max-width: 48em) { 
+			html{ 
+				font-size: 14px;
+			} 
+		}
+		@media all and (max-width: 36em) { 
+			html{ 
+				font-size: 12px;
+			} 
+		}
+		html, body{
+			scroll-behavior: smooth;
+		}
+		body{
+			font-family: 'Arial_Narrow_Bold';
+			-webkit-font-smoothing:antialiased;
+			font-size: 1rem;
+			line-height: 1.2;
+			margin:1rem;
+			text-transform: uppercase;
+			background-color: #fff;
+			color:#fff;
+		}
+		body > header{
+  			position: sticky;
+			top: 1rem;
+			width:100%;
+			display: flex;
+  			flex-direction: row;
+  			flex-wrap: nowrap;
+  			gap:0.75rem;
+  			margin-bottom: 1.2rem;
+  			z-index:9999;
+  		}
+
+  		body > header h1{
+  			white-space: nowrap;
+  		}
+		nav{
+			position: fixed;
+			top:0;
+			left:0;
+			height:100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: space-between;
+			padding:1rem;
+			pointer-events: none;
+			z-index:9999;
+		}
+		header, nav{
+  			mix-blend-mode: difference;
+  		}
+		nav > div{
+			pointer-events: auto;
+		}
+
+		main.scroll{
+			display: flex;
+			flex-direction: column;
+			gap:2rem;
+		}
+
+		figure{
+			width:100%;
+			height: calc(100vh - 5.2rem);
+		}
+		img{
+			display: block;
+			margin:auto;
+			width: 100%;
+			height:100%;
+			object-fit: contain;
+		}
+
+		details summary{
+  			width:fit-content;
+  			cursor: pointer;
+  		}
+		details summary::-webkit-details-marker {
+			display:none;
+		}
+		details > summary:first-of-type {
+			list-style-type: none;
+		}
+		@media all and (max-width: 32rem) { 
+
+		}
+		
+		summary:after, .arrDown:after{
+			content:'▽';
+			font-family: 'arrow';
+			display: inline-block;
+			transform-origin: center;
+			transform: scaleX(0.7);
+		}
+		details[open] summary:after{
+			content:'△';
+		}
+		.arrRight:after{
+			content:'▷';
+			font-family: 'arrow';
+			display: inline-block;
+			margin: 0 0.1rem 0 0.2rem;
+			transform-origin: 0 0.4rem;
+			transform: scaleY(0.75);
+		}
+		sub{
+			font-size: 0.8rem;
+		}
+		#index{
+			position: absolute;
+			right:0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><a href="/">Brandon J.&thinsp;Chu</a></h1>
+		<details>
+  			<summary>Info</summary>
+  			<div>
+  				<p>Brandon J. Chu is a fashion designer in New York, New York.</p>
+  				<p>
+  					<a href="mailto:brandon@brandonjchu.com" target="_blank">Email</a>, 
+					<a href="https://www.instagram.com/brandonjchu/" target="_blank">Instagram</a>, 
+  					<a href="https://www.linkedin.com/in/brandon-j-chu/" target="_blank">linkedIn</a>, 
+  					<a href="" target="_blank">Resume.pdf</a>
+  				</p>
+  			</div>
+		</details>
+		<div id="index">
+			<a href="javascript:history.back()">Index</a>
+		</div>
+	</header>
+
+	<nav class="left">
+		<div>&nbsp;</div>
+		<div>
+			<h2><span>Collection</span></h2>
+			<h3><span class="arrRight">Homme Body, 2023</span>Editorial</h3>
+		</div>
+		<div id="description">
+			<p>
+				<span id="caption"></span><sub id="photoCredit"></sub>
+			</p>
+		</div>
+		<div>
+			©&VeryThinSpace;2023
+		</div>
+	</nav>
+
+	<main class="scroll">
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_1--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_1--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_2--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_2--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_3--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_3--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_4--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_4--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_5--Shot_by_Didier_Osias.webp" id="HOMME_BODY_Editorial_5--Shot_by_Didier_Osias">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_6--Shot_by_Didier_Osias.webp" id="HOMME_BODY_Editorial_6--Shot_by_Didier_Osias">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_7--Shot_by_Didier_Osias.webp" id="HOMME_BODY_Editorial_7--Shot_by_Didier_Osias">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_8--Shot_by_Didier_Osias.webp" id="HOMME_BODY_Editorial_8--Shot_by_Didier_Osias">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_9--Shot_by_Didier_Osias.webp" id="HOMME_BODY_Editorial_9--Shot_by_Didier_Osias">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_10--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_10--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_11--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_11--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/HOMME_BODY_Editorial_12--Shot_by_Phi_Vu.webp" id="HOMME_BODY_Editorial_12--Shot_by_Phi_Vu">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/Cortez_Derby_1_in_collaboration_with_Batrachotoxin.webp" id="Cortez_Derby_1_in_collaboration_with_Batrachotoxin">
+		</figure>
+		<figure>
+			<img src="../assets/images/homme-body/editorial/Cortez_Derby_2_in_collaboration_with_Batrachotoxin.webp" id="Cortez_Derby_2_in_collaboration_with_Batrachotoxin">
+		</figure>
+	</main>
+	<script type="text/javascript">
+		const imageSection = document.querySelector('main.scroll');
+		const caption = document.getElementById('caption');
+		const photoCredit = document.getElementById('photoCredit');
+
+		window.addEventListener('DOMContentLoaded', () => {
+
+			let observer = new IntersectionObserver(observeImgs, {
+	  			root: null,   // default is the viewport
+	  			threshold: 0.5 // percentage of target's visible area
+			},)
+	
+			function observeImgs(entries, opts){
+				entries.forEach(entry => {
+					let currentImg = entry.target;
+					let getMain = currentImg.closest('main');
+					let getFigure = currentImg.closest('figure');
+					let total = getMain.querySelectorAll('figure');
+					let totalNum = total.length
+					let index = [ ...total ].indexOf(getFigure);
+					let description = getCaptions(currentImg);
+
+					if(entry.isIntersecting){
+						caption.innerHTML = `${index+1} / ${totalNum} ${description[0]}`;
+						photoCredit.innerHTML = ' ' + description[1];
+					}
+
+				})
+			}
+
+			document.querySelectorAll('main.scroll > figure > img').forEach((entry) => {
+				observer.observe(entry);
+			});
+			
+		});
+
+		function getCaptions(img){
+			// CAPTION
+			let path = img.src;
+			// remove file path, extension from src 
+			let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
+			// change hyphens to spaces
+			filename = filename.replace(/_/g, ' ');
+	
+			// PHOTOGRAPHER: must be after "shot by"
+			filename = filename.toLowerCase();
+			let photoCredit = ''
+			if ( filename.includes('shot by') ){
+				split = filename.split('--');
+				filename = split[0];
+				photoCredit = split[1];
+			}
+			
+			return [filename, photoCredit];
+		}
+	</script>
+</body>
+</html>
