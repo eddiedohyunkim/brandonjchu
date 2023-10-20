@@ -54,6 +54,7 @@ header, nav{
 }
 nav > div{
 	pointer-events: auto;
+	border:1px solid red;
 }
 
 main.scroll{
@@ -115,6 +116,11 @@ sub{
 }
 
 #description{
-/*	border:1px solid red;*/
-width:min(30rem, calc(100vw - 2rem));
+	position: relative;
+	min-height: 1.2rem;
+	width:min(30rem, calc(100vw - 2rem));
+}
+#description p{
+
+	position: absolute;
 }
