@@ -54,7 +54,6 @@ header, nav{
 }
 nav > div{
 	pointer-events: auto;
-	border:1px solid red;
 }
 
 main.scroll{
