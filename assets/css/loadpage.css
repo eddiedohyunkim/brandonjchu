@@ -22,14 +22,14 @@ body{
 	color:#fff;
 }
 body > header{
-	position: sticky;
+	position: fixed;
 	top: 1rem;
-	width:100%;
+	left: 1rem;
+	width:calc(100vw - 2rem);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	gap:0.75rem;
-/*	margin-bottom: 1.2rem;*/
 	z-index:99999;
 }
 
@@ -45,7 +45,7 @@ nav{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: space-between;
-	padding:1rem;
+	padding: 1rem;
 	pointer-events: none;
 	z-index:9999;
 }
@@ -84,8 +84,8 @@ details summary::-webkit-details-marker {
 details > summary:first-of-type {
 	list-style-type: none;
 }
-@media all and (max-width: 32rem) { 
-
+details > div{
+	position: absolute;
 }
 
 summary:after, .arrDown:after{
@@ -112,4 +112,9 @@ sub{
 #index{
 	position: absolute;
 	right:0;
+}
+
+#description{
+/*	border:1px solid red;*/
+width:min(30rem, calc(100vw - 2rem));
 }
