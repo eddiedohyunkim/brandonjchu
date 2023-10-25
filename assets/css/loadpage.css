@@ -87,6 +87,10 @@ details > summary:first-of-type {
 details > div{
 	position: absolute;
 }
+ul{
+	list-style-type: none;
+	margin-left: 1rem;
+}
 
 summary:after, .arrDown:after{
 	content:'▽';
