@@ -1,5 +1,6 @@
 html{
 	font-size: 16px;
+	background-color: #fff;
 }
 @media all and (max-width: 48em) { 
 	html{ 
@@ -16,9 +17,10 @@ body{
 	-webkit-font-smoothing:antialiased;
 	font-size: 1rem;
 	line-height: 1.2;
-	margin:1rem;
+	padding:1rem;
 	text-transform: uppercase;
-	background-color: #fff;
+	background-color: transparent;
+/*	background-color: #fff;*/
 	color:#fff;
 }
 body > header{
@@ -50,7 +52,7 @@ nav{
 	z-index:9999;
 }
 header, nav{
-	mix-blend-mode: difference;
+	mix-blend-mode: exclusion;
 }
 nav > div{
 	pointer-events: auto;

@@ -1,6 +1,10 @@
 const imageSection = document.querySelector('main.scroll');
 const caption = document.getElementById('caption');
 const photoCredit = document.getElementById('photoCredit');
+const images = document.getElementsByTagName('img');
+for(let i=0; i<images.length; i+=1){
+	generateId(images[i])
+}
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -32,6 +36,20 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 	
 });
+
+function generateId(img){
+	// let captionArr = getCaptions(img)[0];
+	// console.log(captionArr)
+	let path = img.src;
+	let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
+	filename = filename.toLowerCase();
+	if ( filename.includes('shot_by') ){
+		split = filename.split('--');
+		filename = split[0];
+	}
+	console.log(filename)
+	img.id = filename;
+}
 
 function getCaptions(img){
 	// CAPTION

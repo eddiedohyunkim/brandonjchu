@@ -2,6 +2,10 @@
 	font-family:'Arial_Narrow_Bold';
 	src: url('../fonts/Arial_Narrow_Bold.ttf');
 }
+@font-face{
+    font-family:'Arial_Narrow';
+    src: url('../fonts/Arial_Narrow.ttf');
+}
 @font-face {
     font-family: 'arrow';
     src: url('../fonts/arrow.woff2') format('woff2'),
