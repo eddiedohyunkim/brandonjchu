@@ -9,7 +9,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/arrow.css"> -->
 	<style type="text/css">
 		html{
-			font-size: 16px;
+			font-size: 14px;
 		}
 		@media all and (max-width: 48em) { 
 			html{ 
@@ -24,6 +24,7 @@
 		body{
 			font-family: 'Arial_Narrow_Bold';
 			-webkit-font-smoothing:antialiased;
+			text-rendering: optimizeLegibility;
 			font-size: 1rem;
 			line-height: 1.2;
 			margin:1rem;
@@ -48,7 +49,7 @@
   		main{
   			display: flex;
   			flex-direction: column;
-  			gap:8rem;
+  			gap:4rem;
   			margin-bottom: 2rem;
   		}
   		section > header{
@@ -56,9 +57,9 @@
 		}
   		.imgGrid{
   			display: grid;
-  			grid-template-columns:repeat(auto-fill, minmax(16rem, 1fr));
+  			grid-template-columns:repeat(auto-fill, minmax(20rem, 1fr));
   			grid-gap: 1rem;
-  			margin-bottom: 2rem;
+  			margin-bottom: 1rem;
   			transition: all 0.2s ease;
   		}
   		@media all and (max-width: 58rem) { 
@@ -90,6 +91,8 @@
 		.imgGrid figcaption::before {
 		  counter-increment: index;
 		  content: counter(index);
+		  font-family: Arial;
+		  font-weight: bold;
 		}
   		.imgGrid figcaption{
 			margin-top: 1.2rem;
@@ -128,6 +131,8 @@
 			position: absolute;
 			content: counter(index) ".";
 			margin-left: -1.5em;
+			font-family: Arial;
+			font-weight: bold;
 		}
   		details summary{
   			width:fit-content;
@@ -144,31 +149,52 @@
 		}
 		
 		summary:after, .arrDown:after{
-			content:'▽';
-			font-family: 'arrow';
+			content:'▼';
+/*			font-family: 'arrow';*/
 			display: inline-block;
-			transform-origin: center;
-			transform: scaleX(0.7);
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #000;
+			color:transparent;
+/*			transform-origin: 0 0.4rem;*/
+			margin: 0 0 0 0.2rem;
+			font-size: 12px;
+			vertical-align: 1px;
+/*			transform-origin: center;*/
+/*			transform: scaleX(0.75);*/
 		}
 		details[open] summary:after{
-			content:'△';
+/*			content:'△';*/
+			content:'▲';
+		}
+		.arrRight{
+			font-family: Arial;
+			font-weight: bold;
 		}
 		.arrRight:after{
-			content:'▷';
-			font-family: 'arrow';
+			content:'►';
+/*			content:'▷';*/
 			display: inline-block;
 			margin: 0 0.1rem 0 0.2rem;
-			transform-origin: 0 0.4rem;
-			transform: scaleY(0.75);
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #000;
+			color:transparent;
+/*			transform-origin: 0 0.4rem;*/
+			font-size: 12px;
+			vertical-align: 1px;
+/*			transform: scaleX(1.2);*/
 		}
 		sub{
 			font-size: 0.8rem;
+		}
+		p, .normal{
+			font-family: Arial;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1><a href="/">Brandon J.&thinsp;Chu</a></h1>
+		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a></h1>
 		<details>
   			<summary>Info</summary>
   			<div>
@@ -184,120 +210,120 @@
 	</header>
 
 	<main>
-	<section>
+	<section data-project="Homme Body, 2023">
 		<header>
 			<h2><span>Collection</span></h2>
-			<h3><span class="arrRight">Homme Body, 2023</span>Editorial</h3>
+			<h3><span class="arrRight">Homme Body, 2023</span><span>Editorial</span></h3>
 		</header>
 		<div class="imgGrid">
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_1--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_1--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_1--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_2--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_2--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_2--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_3--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_3--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_3--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_4--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_4--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_4--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_5--Shot_by_Didier_Osias">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_5--Shot_by_Didier_Osias.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_5--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_6--Shot_by_Didier_Osias">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_6--Shot_by_Didier_Osias.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_6--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_7--Shot_by_Didier_Osias">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_7--Shot_by_Didier_Osias.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_7--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_8--Shot_by_Didier_Osias">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_8--Shot_by_Didier_Osias.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_8--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_9--Shot_by_Didier_Osias">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_9--Shot_by_Didier_Osias.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_9--Shot_by_Didier_Osias.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_10--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_10--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_10--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_11--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_11--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_11--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#HOMME_BODY_Editorial_12--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/editorial/HOMME_BODY_Editorial_12--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Editorial_12--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#Cortez_Derby_1_in_collaboration_with_Batrachotoxin">
-						<img src="assets/images/homme-body/editorial/Cortez_Derby_1_in_collaboration_with_Batrachotoxin.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Cortez_Derby_1_in_collaboration_with_Batrachotoxin.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-editorial/#Cortez_Derby_2_in_collaboration_with_Batrachotoxin">
-						<img src="assets/images/homme-body/editorial/Cortez_Derby_2_in_collaboration_with_Batrachotoxin.webp">
+					<a href="homme-body-editorial">
+						<img src="assets/images/homme_body-2023/editorial/Cortez_Derby_2_in_collaboration_with_Batrachotoxin.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -305,7 +331,7 @@
 		</div>
 	</section>
 	
-	<section>
+	<section data-project="Homme Body, 2023">
 		<header>
 			<h2>Collection</h2>
 			<h3><span class="arrRight">Homme Body, 2023</span>Lookbook</h3>
@@ -313,64 +339,64 @@
 		<div class="imgGrid">
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_1_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_1_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_1_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_2_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_2_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_2_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_3_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_3_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_3_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_4_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_4_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_4_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>	
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_5_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_5_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_5_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_6_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_6_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_6_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_7_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_7_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_7_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="homme-body-lookbook/#HOMME_BODY_Look_8_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu">
-						<img src="assets/images/homme-body/lookbook/HOMME_BODY_Look_8_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu.webp">
+					<a href="homme-body-lookbook">
+						<img src="assets/images/homme_body-2023/lookbook/Look_8_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -492,7 +518,7 @@
 		</div>
 	</section> -->
 
-	<section>
+	<section data-project="Untitled, 2022">
 		<header>
 			<h2>Collection</h2>
 			<h3><span class="arrRight">Untitled, 2022</span>Editorial&VeryThinSpace;/&VeryThinSpace;Lookbook</h3>
@@ -500,48 +526,48 @@
 		<div class="imgGrid">
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_1--Shot_by_Ashley_Zhang">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_1--Shot_by_Ashley_Zhang.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_1--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_2--Shot_by_Tommy_Park">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_2--Shot_by_Tommy_Park.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_2--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_3--Shot_by_Tommy_Park">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_3--Shot_by_Tommy_Park.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_3--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_4--Shot_by_Ashley_Zhang">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_4--Shot_by_Ashley_Zhang.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_4--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_5--Shot_by_Ashley_Zhang">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_5--Shot_by_Ashley_Zhang.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_5--Shot_by_Ashley_Zhang.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="untitled-editorial-lookbook/#Untitled_2022_Editorial_6--Shot_by_Tommy_Park">
-						<img src="assets/images/untitled/lookbook-editorial/Untitled,_2022_Editorial_6--Shot_by_Tommy_Park.webp">
+					<a href="untitled-editorial-lookbook">
+						<img src="assets/images/untitled-2022/lookbook-editorial/Editorial_6--Shot_by_Tommy_Park.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -581,21 +607,49 @@
 
 			// create caption <li>
 			for(let i=0; i<captionArr.length; i+=1){
-				let captionList = document.createElement('li');
-				captionList.innerHTML = captionArr[i][0] + " ";
+				let caption = document.createElement('li');
+
+				let project = document.createElement('span');
+				project.className = 'arrRight'
+				project.innerHTML = captionArr[i][0];
+				caption.appendChild(project);
+
+				let name = document.createElement('span');
+				name.innerHTML = captionArr[i][1] + ' ';
+				caption.appendChild(name);
 
 				let photoBy = document.createElement('sub');
-				photoBy.innerHTML = captionArr[i][1];
+				photoBy.innerHTML = captionArr[i][2];
+				caption.appendChild(photoBy);
 
-				captionList.appendChild(photoBy);
-
-				captionOl.appendChild(captionList);
+				captionOl.appendChild(caption);
 			}
 			
 			section.appendChild(captionOl);
 		}
 
+
+		const images = document.getElementsByTagName('img');
+		for(let i=0; i<images.length; i+=1){
+			generateHref(images[i])
+		}
+
+
+		function generateHref(img){
+			let path = img.src;
+			let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
+			filename = filename.toLowerCase();
+			if ( filename.includes('shot_by') ){
+				split = filename.split('--');
+				filename = split[0];
+			}
+
+			let a = img.closest('a');
+			a.href += '/#' + filename;
+		}
+
 		function getCaptions(section){
+			let project = section.dataset.project;
 			let arr = [];
 			const allImgs = [...section.getElementsByTagName('img')];
 			allImgs.forEach((img) => {
@@ -614,7 +668,7 @@
 					filename = split[0];
 					photoCredit = split[1];
 				}
-				arr.push([filename, photoCredit]);
+				arr.push([project, filename, photoCredit]);
 			});
 			return arr;
 		}
