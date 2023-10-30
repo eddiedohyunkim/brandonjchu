@@ -56,6 +56,8 @@ function getCaptions(img){
 	let path = img.src;
 	// remove file path, extension from src 
 	let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
+	// change '_-_' to ': '
+	filename = filename.replace(/_-_/g, ': ');
 	// change hyphens to spaces
 	filename = filename.replace(/_/g, ' ');
 
