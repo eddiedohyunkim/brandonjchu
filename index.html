@@ -340,7 +340,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_1_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_1_-_Black_Double-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -348,7 +348,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_2_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_2_-_Navy_Y-Collar_Double-Breasted_Jacket_with_Navy_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -356,7 +356,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_3_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_3_-_Navy_Military_Ike_Jacket_with_Black_Flared_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -364,7 +364,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_4_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_4_-_Black_Dropped_Shoulder_Single-Breasted_Jacket_with_Black_Double_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>	
 				<figcaption></figcaption>
@@ -372,7 +372,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_5_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_5_-_Black_One-Button_Flannel_Jacket_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -380,7 +380,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_6_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_6_-_Black_Alpaca_Wool_Sweater_with_Black_Silk-Waistband_Belt_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -388,7 +388,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_7_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_7_-_Navy_Alpaca_Wool_Sweater_with_Black_CF_Pleated_Trousers--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -396,7 +396,7 @@
 			<figure>
 				<div>
 					<a href="homme-body-lookbook">
-						<img src="assets/images/homme_body-2023/lookbook/Look_8_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu.webp">
+						<img src="assets/images/homme_body-2023/lookbook/Look_8_-_White_Cotton_Undershirt_with_Black_Double_Pleated_Shorts--Shot_by_Phi_Vu.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
@@ -657,8 +657,13 @@
 				let path = img.src;
 				// remove file path, extension from src 
 				let filename = path.replace(/^.*[\\\/]/, '').split(".")[0];
+				
+				// change '_-_' to ': '
+				filename = filename.replace(/_-_/g, ': ');
+				
 				// change hyphens to spaces
 				filename = filename.replace(/_/g, ' ');
+				
 
 				// PHOTOGRAPHER: must be after "shot by"
 				filename = filename.toLowerCase();
