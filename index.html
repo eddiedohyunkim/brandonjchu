@@ -37,7 +37,7 @@
 			display: flex;
   			flex-direction: row;
   			flex-wrap: nowrap;
-  			gap:0.75rem;
+  			gap:0.25rem;
   			margin-bottom: 1.2rem;
   			z-index:9999;
   		}
@@ -124,16 +124,17 @@
 		ol li{ 
 			position: relative;
 			counter-increment: index;
-			padding-left: 1.5rem;
+			padding-left: 2rem;
 		}
 		
 		ol li:before{ 
 			position: absolute;
 			content: counter(index) ".";
-			margin-left: -1.5em;
+			margin-left: -2em;
 			font-family: Arial;
 			font-weight: bold;
 		}
+
   		details summary{
   			width:fit-content;
   			cursor: pointer;
@@ -186,7 +187,18 @@
 		sub{
 			font-size: 0.8rem;
 		}
-		p, .normal{
+		.normal{
+			font-family: Arial;
+			font-weight: bold;
+		}
+		h3{
+/*			font-family: Arial;*/
+/*			font-weight: bold;*/
+/*			transform-origin: left;*/
+/*			transform: scaleX(0.9);*/
+/*			-webkit-text-stroke-width:0.01rem;*/
+		}
+		.project{
 			font-family: Arial;
 			font-weight: bold;
 		}
@@ -194,7 +206,7 @@
 </head>
 <body>
 	<header>
-		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a></h1>
+		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a>,</h1>
 		<details>
   			<summary>Info</summary>
   			<div>
@@ -404,119 +416,79 @@
 		</div>
 	</section>
 
-	<!-- <section>
+	<section data-project="Sketchbook, 2023">
 		<header>
 			<h2>Collection</h2>
-			<h3><span class="arrRight">Homme Body, 2023</span> Portfolio</h3>
+			<h3><span class="arrRight">Sketchbook, 2023</span> Portfolio</h3>
 		</header>
 		<div class="imgGrid">
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-1.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Double-Breasted_Jacket_Pattern_Sketch.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-2.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Ike_Jacket_Pattern_Sketch.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-3.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Pattern-making_Development_1.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-4.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Pattern-making_Development_2.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-5.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Fitting_Process_1.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Pattern-making-Development-6.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Fitting_Process_2.webp">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Fitting-Process-1.webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Technical_Flats_-_Tops.svg">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 			<figure>
 				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Fitting-Process-2.webp">
-					</a>
-				</div>
-				<figcaption></figcaption>
-			</figure>
-			<figure>
-				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Fitting-Process-3.webp">
-					</a>
-				</div>
-				<figcaption></figcaption>
-			</figure>
-			<figure>
-				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Fitting-Process-4.webp">
-					</a>
-				</div>
-				<figcaption></figcaption>
-			</figure>
-			<figure>
-				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Fitting-Process-5.webp">
-					</a>
-				</div>
-				<figcaption></figcaption>
-			</figure>
-			<figure>
-				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Technical-Flats-(Bottoms).webp">
-					</a>
-				</div>
-				<figcaption></figcaption>
-			</figure>
-			<figure>
-				<div>
-					<a href="#">
-						<img src="assets/images/homme-body/portfolio/Technical-Flats-(Jackets-and-Shirt).webp">
+					<a href="sketchbook">
+						<img src="assets/images/sketchbook-2023/Technical_Flats_-_Bottoms.svg">
 					</a>
 				</div>
 				<figcaption></figcaption>
 			</figure>
 
 		</div>
-	</section> -->
+	</section>
 
 	<section data-project="Untitled, 2022">
 		<header>
@@ -616,6 +588,7 @@
 
 				let name = document.createElement('span');
 				name.innerHTML = captionArr[i][1] + ' ';
+				// name.className = 'project'
 				caption.appendChild(name);
 
 				let photoBy = document.createElement('sub');
@@ -660,7 +633,7 @@
 				
 				// change '_-_' to ': '
 				filename = filename.replace(/_-_/g, ': ');
-				
+
 				// change hyphens to spaces
 				filename = filename.replace(/_/g, ' ');
 				
