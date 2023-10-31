@@ -108,7 +108,7 @@ details[open] summary:after{
 	content:'▲';
 }
 details > ol{
-	margin-top: 1.2rem;
+	margin-top: 2.4rem;
 	position: absolute;
 	margin-left: 1rem;
 }
