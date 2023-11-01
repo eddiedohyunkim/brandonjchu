@@ -39,12 +39,7 @@
 /*  			flex-wrap: nowrap;*/
 /*  			gap:0.25rem;*/
   			margin-bottom: 1.2rem;
-  			z-index:9999;
-  		}
-
-  		body > header h1, body > header p{
-  			display: inline;
-/*  			white-space: nowrap;*/
+  			z-index:99999;
   		}
 
   		main{
@@ -116,8 +111,16 @@
 
 		/* general typography */
   		a:hover{
-  			opacity: 0.5;
-  		}
+			opacity: 0.5;
+		}
+		
+		summary:hover:after{
+			opacity: 0.5;
+		}
+		
+		summary:hover > a{
+			opacity: 1;
+		}
   		ol{
   			list-style-type: none;
 			counter-reset: index;
@@ -206,21 +209,6 @@
 		sub{
 			font-size: 0.8rem;
 		}
-		/*.normal{
-			font-family: Arial;
-			font-weight: bold;
-		}*/
-		h3{
-/*			font-family: Arial;*/
-/*			font-weight: bold;*/
-/*			transform-origin: left;*/
-/*			transform: scaleX(0.9);*/
-/*			-webkit-text-stroke-width:0.01rem;*/
-		}
-		/*.project{
-			font-family: Arial;
-			font-weight: bold;
-		}*/
 
 		.dropdown > summary:after{
 	font-family: 'Arial_Narrow';
@@ -242,39 +230,18 @@
 		width:9px;
 	}
 }
-.dropdown{
-/*	display: inline;*/
-}
-.dropdown > summary, .dropdown > div, .dropdown > div *{
+
+.dropdown#brandon > summary, .dropdown#brandon > div, .dropdown#brandon > div *{
 	display: inline;
 } 
-
-
 .dropdown[open] summary:after{
 	content:'−';
 }
 	</style>
 </head>
 <body>
-	<!-- <header>
-		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a></h1>
-		<details class="dropdown">
-  			<summary></summary>
-  			<div>
-  				<p>is a fashion designer in New York, New York.</p> <br>
-  				<p>
-  					<a href="mailto:brandon@brandonjchu.com" target="_blank">Email</a>, 
-					<a href="https://www.instagram.com/brandonjchu/" target="_blank">Instagram</a>, 
-  					<a href="https://www.linkedin.com/in/brandon-j-chu/" target="_blank">linkedIn</a>, 
-  					<a href="assets/Brandon_J_Chu_Resume.pdf" target="_blank">Resume.pdf</a>
-  				</p>
-  			</div>
-		</details>
-	</header> -->
-
 	<header>
-		<!-- <span style="display: inline-block; vertical-align: top"><a href="/">Brandon J.&thinsp;Chu</a></span> -->
-		<details class="dropdown">
+		<details class="dropdown" id="brandon">
   			<summary><a href="/">Brandon J.&thinsp;Chu</a></summary>
   			<div>
   				<span>is a fashion designer in New York, New York.</span> <br>
