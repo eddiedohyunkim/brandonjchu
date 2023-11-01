@@ -121,16 +121,47 @@ summary:after, .arrDown:after{
 			content:'▲';
 		}
 
+.dropdown > summary:after{
+	font-family: 'Arial_Narrow';
+	content:'+';
+	font-size: 1rem;
+	line-height: 10px;
+	width:11px;
+	text-align: center;
+	-webkit-text-stroke-width: 0;
+	vertical-align: 0;
+	color:#fff;
+	border:1px solid;
+	margin-left: 0.25rem;
+}
+
+@media all and (max-width: 36em) { 
+	.dropdown > summary:after{
+		line-height: 8px;
+		width:9px;
+	}
+}
+
+
+.dropdown[open] summary:after{
+	content:'−';
+}
+
+.dropdown > ol{
+	position: absolute;
+	margin-top: 2.4rem;
+	list-style-type: none;
+}
 
 		.arrRight{
-			font-family: Arial;
-			font-weight: bold;
+/*			font-family: Arial;*/
+/*			font-weight: bold;*/
 		}
 		.arrRight:after{
 			content:'►';
 /*			content:'▷';*/
 			display: inline-block;
-			margin: 0 0.1rem 0 0.2rem;
+			margin: 0 0rem 0 0.3rem;
 			-webkit-text-stroke-width: 1px;
 			-webkit-text-stroke-color: #fff;
 			color:transparent;
@@ -163,7 +194,7 @@ sub{
 
 	position: absolute;
 }
-.normal{
+/*.normal{
 	font-family: Arial;
 	font-weight: bold;
-}
+}*/
