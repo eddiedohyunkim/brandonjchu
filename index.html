@@ -34,16 +34,17 @@
   			position: sticky;
 			top: 1rem;
 			width:100%;
-			display: flex;
-  			flex-direction: row;
-  			flex-wrap: nowrap;
-  			gap:0.25rem;
+/*			display: flex;*/
+/*  			flex-direction: row;*/
+/*  			flex-wrap: nowrap;*/
+/*  			gap:0.25rem;*/
   			margin-bottom: 1.2rem;
   			z-index:9999;
   		}
 
-  		body > header h1{
-  			white-space: nowrap;
+  		body > header h1, body > header p{
+  			display: inline;
+/*  			white-space: nowrap;*/
   		}
 
   		main{
@@ -220,21 +221,69 @@
 			font-family: Arial;
 			font-weight: bold;
 		}*/
+
+		.dropdown > summary:after{
+	font-family: 'Arial_Narrow';
+	content:'+';
+	font-size: 1rem;
+	line-height: 10px;
+	width:11px;
+	text-align: center;
+	-webkit-text-stroke-width: 0;
+	vertical-align: 0;
+	color:#000;
+	border:1px solid;
+	margin-left: 0.2rem;
+}
+
+@media all and (max-width: 36em) { 
+	.dropdown > summary:after{
+		line-height: 8px;
+		width:9px;
+	}
+}
+.dropdown{
+/*	display: inline;*/
+}
+.dropdown > summary, .dropdown > div, .dropdown > div *{
+	display: inline;
+} 
+
+
+.dropdown[open] summary:after{
+	content:'−';
+}
 	</style>
 </head>
 <body>
-	<header>
-		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a>,</h1>
-		<details>
-  			<summary>Info</summary>
+	<!-- <header>
+		<h1><a href="/" class="normal">Brandon J.&thinsp;Chu</a></h1>
+		<details class="dropdown">
+  			<summary></summary>
   			<div>
-  				<p>Brandon J. Chu is a fashion designer in New York, New York.</p>
+  				<p>is a fashion designer in New York, New York.</p> <br>
   				<p>
   					<a href="mailto:brandon@brandonjchu.com" target="_blank">Email</a>, 
 					<a href="https://www.instagram.com/brandonjchu/" target="_blank">Instagram</a>, 
   					<a href="https://www.linkedin.com/in/brandon-j-chu/" target="_blank">linkedIn</a>, 
   					<a href="assets/Brandon_J_Chu_Resume.pdf" target="_blank">Resume.pdf</a>
   				</p>
+  			</div>
+		</details>
+	</header> -->
+
+	<header>
+		<!-- <span style="display: inline-block; vertical-align: top"><a href="/">Brandon J.&thinsp;Chu</a></span> -->
+		<details class="dropdown">
+  			<summary><a href="/">Brandon J.&thinsp;Chu</a></summary>
+  			<div>
+  				<span>is a fashion designer in New York, New York.</span> <br>
+  				<span>
+  					<a href="mailto:brandon@brandonjchu.com" target="_blank">Email</a>, 
+					<a href="https://www.instagram.com/brandonjchu/" target="_blank">Instagram</a>, 
+  					<a href="https://www.linkedin.com/in/brandon-j-chu/" target="_blank">linkedIn</a>, 
+  					<a href="assets/Brandon_J_Chu_Resume.pdf" target="_blank">Resume.pdf</a>
+  				</span>
   			</div>
 		</details>
 	</header>
