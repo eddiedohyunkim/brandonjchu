@@ -28,16 +28,9 @@ body > header{
 	top: 1rem;
 	left: 1rem;
 	width:calc(100vw - 2rem);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap:0.25rem;
 	z-index:99999;
 }
 
-body > header h1{
-	white-space: nowrap;
-}
 nav{
 	position: fixed;
 	top:0;
@@ -50,10 +43,13 @@ nav{
 	padding: 1rem;
 	pointer-events: none;
 	z-index:9999;
+	transform: translate3d(0,0,100px);
 }
+
 header, nav{
 	mix-blend-mode: exclusion;
 }
+
 nav > div{
 	pointer-events: auto;
 }
@@ -86,9 +82,7 @@ details summary::-webkit-details-marker {
 details > summary:first-of-type {
 	list-style-type: none;
 }
-details > div{
-	position: absolute;
-}
+
 ul{
 	list-style-type: none;
 	margin-left: 1rem;
@@ -132,7 +126,7 @@ summary:after, .arrDown:after{
 	vertical-align: 0;
 	color:#fff;
 	border:1px solid;
-	margin-left: 0.25rem;
+	margin-left: 0.2rem;
 }
 
 @media all and (max-width: 36em) { 
@@ -153,30 +147,45 @@ summary:after, .arrDown:after{
 	list-style-type: none;
 }
 
-		.arrRight{
-/*			font-family: Arial;*/
-/*			font-weight: bold;*/
-		}
-		.arrRight:after{
-			content:'►';
-/*			content:'▷';*/
-			display: inline-block;
-			margin: 0 0rem 0 0.3rem;
-			-webkit-text-stroke-width: 1px;
-			-webkit-text-stroke-color: #fff;
-			color:transparent;
-/*			transform-origin: 0 0.4rem;*/
-			font-size: 12px;
-			vertical-align: 1px;
-/*			transform: scaleX(1.2);*/
-		}
+.dropdown#brandon > summary, .dropdown#brandon > div, .dropdown#brandon > div *{
+	display: inline;
+}
 
-		@media all and (max-width: 36em) { 
-			.arrRight:after{
-				font-size: 10px;
-				vertical-align: 1px;
-			} 
-		}
+
+.arrRight:after{
+	content:'►';
+	display: inline-block;
+	margin: 0 0rem 0 0.3rem;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fff;
+	color:transparent;
+	font-size: 12px;
+	vertical-align: 1px;
+}
+
+@media all and (max-width: 36em) { 
+	.arrRight:after{
+		font-size: 10px;
+		vertical-align: 1px;
+	} 
+}
+
+
+
+
+
+a:hover{
+	opacity: 0.5;
+}
+
+summary:hover:after{
+	opacity: 0.5;
+}
+
+summary:hover > a{
+	opacity: 1;
+}
+
 sub{
 	font-size: 0.8rem;
 }
