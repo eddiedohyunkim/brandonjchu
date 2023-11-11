@@ -418,7 +418,7 @@
 	</header>
 
 	<main>
-	<section data-project="Homme Body" data-year="2023">
+	<section data-project="Homme Body" data-year="2023" id="homme-body-editorial">
 		<header>
 			<div class="header1">
 				<div>
@@ -554,7 +554,7 @@
 		</div>
 	</section>
 	
-	<section data-project="Homme Body" data-year="2023">
+	<section data-project="Homme Body" data-year="2023" id="homme-body-lookbook">
 		<header>
 			<div class="header1">
 				<div>
@@ -642,7 +642,7 @@
 		</div>
 	</section>
 
-	<section data-project="Sketchbook" data-year="2023">
+	<section data-project="Sketchbook" data-year="2023" id="sketchbook-2023">
 		<header>
 			<div class="header1">
 				<div>
@@ -739,7 +739,7 @@
 		</div>
 	</section>
 
-	<section data-project="Untitled" data-year="2022">
+	<section data-project="Untitled" data-year="2022" id="untitled-2022-editorial-lookbook">
 		<header>
 			<div class="header1">
 				<div>
@@ -816,33 +816,56 @@
 
 		// IF page is loaded with #Fragment in url
 		window.addEventListener('load', function(){
-			if(window.location.hash) {
-				let hash = window.location.hash;
-				let selectedImg = document.querySelector(hash);
-				let section = selectedImg.closest('section');
-				section.classList.add('vertical');
-			}
+			hash()
 		})
 
 		// IF there is #Fragment change in url
 		window.addEventListener('hashchange', function(){
-      		if(window.location.hash) {
-  				// #Fragment exists
+      		hash()
+    	});
 
-  				let verticals = document.querySelectorAll('.vertical');	
-				if (verticals !== null) {
-					verticals.forEach((vertical)=>{
-						vertical.classList.remove('vertical');
+    	function hash(){
+    		if(window.location.hash) {
+  				// #Fragment exists
+				let allSections = document.querySelectorAll('section');
+				allSections.forEach((section)=>{
+					section.classList.add('vertical');
+				})
+
+				let observer = new IntersectionObserver(observeImgs, {
+					root: null,   // default is the viewport
+					threshold: 0.5 // percentage of target's visible area
+				},)
+	
+				function observeImgs(entries, opts){
+					entries.forEach(entry => {
+						let currentImg = entry.target;
+						let section = currentImg.closest('section');
+						let figure = currentImg.closest('figure');
+						let total = section.querySelectorAll('figure');
+						let index = [ ...total ].indexOf(figure);
+
+						let indexIs = section.querySelectorAll('nav > span')[index];
+
+	
+						if(entry.isIntersecting){
+							let allPrevious = document.querySelectorAll('.currentIndex');
+							if(allPrevious !== null){
+								allPrevious.forEach((previous)=>{
+									previous.classList.remove('currentIndex');
+								})
+							}
+
+							indexIs.classList.add('currentIndex')
+							console.log(`${index+1} ${currentImg.id}`);
+						}
+	
 					})
 				}
-
-				let hash = window.location.hash;
-
-				let selectedImg = document.querySelector(hash);
-				let section = selectedImg.closest('section');
-				section.classList.add('vertical');
-
-				// section.classList.add('vertical');
+	
+				document.querySelectorAll('.imgGrid img').forEach((entry) => {
+					observer.observe(entry);
+				});
 
 			} else {
   				// #Fragment doesn't exist
@@ -851,29 +874,8 @@
   					vertical.classList.remove('vertical');
   				});
 			}
-    	});
-
-
-		function blowup(section){
-			imgs = section.querySelectorAll('img');
-			imgs.forEach((img)=>{
-				img.addEventListener('click', function(){
-
-
-					var verticals = document.querySelectorAll('.vertical');	
-					if (verticals !== null) {
-						verticals.forEach((vertical)=>{
-							vertical.classList.remove('vertical');
-						})
-					}
-					
-					section.classList.add('vertical');
-
-					
-
-				})
-			})
-		}
+    	}
+			
 
 		back()
 		function back(){
@@ -889,10 +891,7 @@
 
 
 		function removeUrlFragment(){
-			// remove fragment as much as it can go without adding an entry in browser history:
 			window.location.replace("#");
-			
-			// slice off the remaining '#' in HTML5:    
 			if (typeof window.history.replaceState == 'function') {
 				history.replaceState({}, '', window.location.href.slice(0, -1));
 			}
@@ -904,8 +903,6 @@
 			generateCaptions(section)
 			generateIdNHref(section)
 			generateNav(section)
-			
-			blowup(section)
 		})
 
 		function generateNav(section){
@@ -929,16 +926,13 @@
 				// console.log('#'+firstImg.id);
 				allSections.forEach((sect)=>{
 					let list = document.createElement('li');
-
-					// console.log(sect.dataset.project);
 					
-					// console.log(img);
-					
-					let firstImg = sect.querySelectorAll('img')[0];
+					// let firstImg = sect.querySelectorAll('img')[0];
+					// let firstImg = sect.id;
 
 					let linksToSection = document.createElement('a');
 					
-					linksToSection.href = "#" + firstImg.id; 
+					linksToSection.href = "#" + sect.id; 
 					linksToSection.innerHTML = sect.querySelector('header h3').innerHTML;
 					if(linksToSection.innerHTML == section.querySelector('header h3').innerHTML){
 						list.className = 'current';
