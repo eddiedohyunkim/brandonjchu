@@ -832,6 +832,9 @@
 					section.classList.add('vertical');
 				})
 
+				document.querySelector(window.location.hash).scrollIntoView();
+
+
 				let observer = new IntersectionObserver(observeImgs, {
 					root: null,   // default is the viewport
 					threshold: 0.5 // percentage of target's visible area
@@ -846,6 +849,8 @@
 						let index = [ ...total ].indexOf(figure);
 
 						let indexIs = section.querySelectorAll('nav > span')[index];
+						let captionIs = section.querySelector('.header2 p');
+						let caption = figure.querySelector('figcaption').innerHTML;
 
 	
 						if(entry.isIntersecting){
@@ -856,8 +861,8 @@
 								})
 							}
 
-							indexIs.classList.add('currentIndex')
-							console.log(`${index+1} ${currentImg.id}`);
+							indexIs.classList.add('currentIndex');
+							captionIs.innerHTML = caption;
 						}
 	
 					})
