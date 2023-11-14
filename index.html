@@ -6,7 +6,6 @@
 	<title>BRANDON J. CHU</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/arrow.css"> -->
 	<style type="text/css">
 		html{
 			font-size: 14px;
@@ -792,7 +791,7 @@
 		</div>
 	</section>
 
-	<section data-project="1905 Riverside" data-year="2022" id="1905-riverside-editorial-lookbook">
+	<section data-project="Riverside" data-year="2022" id="1905-riverside-editorial-lookbook">
 		<header>
 			<div class="header1">
 				<div>
@@ -894,7 +893,9 @@
 				})
 				document.querySelector('body > header').classList.add('vertical');
 
+				console.log(window.location.hash)
 				document.querySelector(window.location.hash).scrollIntoView();
+
 
 
 				let observer = new IntersectionObserver(observeImgs, {
