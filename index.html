@@ -893,10 +893,7 @@
 				})
 				document.querySelector('body > header').classList.add('vertical');
 
-				console.log(window.location.hash)
 				document.querySelector(window.location.hash).scrollIntoView();
-
-
 
 				let observer = new IntersectionObserver(observeImgs, {
 					root: null,   // default is the viewport
