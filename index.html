@@ -53,6 +53,14 @@
 			flex-direction: column;
 			gap: 1.2rem;
 		}
+
+		section > header{
+			pointer-events: none;
+		}
+
+		section > header .header1 > *, section > header .header2 > *{
+			pointer-events: auto;
+		} 
 		section > header > .header1{
 			display: flex;
 			justify-content: space-between;
@@ -73,11 +81,11 @@
 		} 
 
 
-		section > header > .header2{
+		section > header > .header2, section > header nav{
 			display: none;
 		}
 
-		.vertical > header > .header2{
+		.vertical > header > .header2, .vertical > header nav{
 			display: block;
 		}
 
@@ -89,7 +97,38 @@
 		.vertical > header nav{
 			display: flex;
 			gap:0.2rem;
+			background-color: white;
 		}
+
+		@media all and (max-width: 36em) { 
+			.vertical > header nav{
+				width:100%;
+				display: flex;
+				gap:0.2rem;
+				justify-content: space-between;
+				background-color: transparent;
+			}
+		}
+
+		.vertical > header > nav{
+			position: absolute;
+			left:50%;
+			transform: translateX(-50%);
+			bottom:0;
+		}
+
+		.vertical header{
+			position: sticky;
+			top:4.6rem;
+			height:calc(100vh - 4.6rem - 2rem);
+			margin-bottom: calc((100vh - 4.6rem - 2rem) * -1);
+/*			background-color: #fff;*/
+		}
+
+		.vertical header > .header1 .back{
+			display: block;
+		}
+
 
 		.vertical > header nav > span{
 			display: inline-block;
@@ -126,9 +165,12 @@
 		.vertical > header details li,
 		.vertical > header .back,
 		.vertical > header h3,
-		.vertical > header nav,
 		.vertical > header .fullCaption{
 			width: fit-content;
+			background-color: white;
+		}
+
+		.vertical > header nav span{
 			background-color: white;
 		}
 
@@ -157,15 +199,7 @@
 
 
 
-		.vertical header{
-			position: sticky;
-			top:4.6rem;
-/*			background-color: #fff;*/
-		}
 
-		.vertical header > .header1 .back{
-			display: block;
-		}
 
 
 
@@ -486,9 +520,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
-				<nav></nav>
 				<p></p>
 			</div>
+			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -622,9 +656,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
-				<nav></nav>
 				<p></p>
 			</div>
+			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -710,9 +744,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
-				<nav></nav>
 				<p></p>
 			</div>
+			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -807,9 +841,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
-				<nav></nav>
 				<p></p>
 			</div>
+			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
