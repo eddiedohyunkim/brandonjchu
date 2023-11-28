@@ -51,12 +51,20 @@
 			margin-bottom: 1rem;
 			display: flex;
 			flex-direction: column;
-			gap: 1.2rem;
+/*			gap: 1.2rem;*/
 		}
 
 		section > header{
 			pointer-events: none;
 		}
+		section > header .header1, section > header .header2{
+			background-color: white;	
+		}
+
+		section > header .header2{
+			padding-top: 1.2rem;
+		}
+		
 
 		section > header .header1 > *, section > header .header2 > *{
 			pointer-events: auto;
@@ -477,6 +485,16 @@
 		.dropdown[open] summary:after{
 			content:'−';
 		}
+
+		body > .vertical #white{
+/*			border: 1px solid red;*/
+			background-color: white;
+			position: absolute;
+			top:-1rem;
+			height:calc(4.6rem + 1px);
+			width:100%;
+			z-index: -1;
+		}
 	</style>
 </head>
 <body>
@@ -504,6 +522,7 @@
   				</span>
   			</div>
 		</details>
+		<div id="white"></div>
 	</header>
 
 	<main>
