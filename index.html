@@ -97,6 +97,7 @@
 		.vertical > header nav{
 			display: flex;
 			gap:0.2rem;
+			justify-content: center;
 			background-color: white;
 		}
 
@@ -115,13 +116,15 @@
 			left:50%;
 			transform: translateX(-50%);
 			bottom:0;
+			width:100%;
+			padding: 1rem 0 1rem 0;
 		}
 
 		.vertical header{
 			position: sticky;
 			top:4.6rem;
-			height:calc(100dvh - 4.6rem - 2rem);
-			margin-bottom: calc((100dvh - 4.6rem - 2rem) * -1);
+			height:calc(100dvh - 4.6rem);
+			margin-top: calc((100dvh - 4.6rem) * -1);
 /*			background-color: #fff;*/
 		}
 
