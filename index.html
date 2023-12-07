@@ -51,24 +51,8 @@
 			margin-bottom: 1rem;
 			display: flex;
 			flex-direction: column;
-/*			gap: 1.2rem;*/
+			gap: 1.2rem;
 		}
-
-		section > header{
-			pointer-events: none;
-		}
-		section > header .header1, section > header .header2{
-			background-color: white;	
-		}
-
-		section > header .header2{
-			padding-top: 1.2rem;
-		}
-		
-
-		section > header .header1 > *, section > header .header2 > *{
-			pointer-events: auto;
-		} 
 		section > header > .header1{
 			display: flex;
 			justify-content: space-between;
@@ -89,11 +73,11 @@
 		} 
 
 
-		section > header > .header2, section > header nav{
+		section > header > .header2{
 			display: none;
 		}
 
-		.vertical > header > .header2, .vertical > header nav{
+		.vertical > header > .header2{
 			display: block;
 		}
 
@@ -105,41 +89,7 @@
 		.vertical > header nav{
 			display: flex;
 			gap:0.2rem;
-			justify-content: center;
-			background-color: white;
 		}
-
-		@media all and (max-width: 36em) { 
-			.vertical > header nav{
-				width:100%;
-				display: flex;
-				gap:0.2rem;
-				justify-content: space-between;
-/*				background-color: transparent;*/
-			}
-		}
-
-		.vertical > header > nav{
-			position: absolute;
-			left:50%;
-			transform: translateX(-50%);
-			bottom:0;
-			width:100%;
-			padding: 1rem 0 1rem 0;
-		}
-
-		.vertical header{
-			position: sticky;
-			top:4.6rem;
-			height:calc(100dvh - 4.6rem);
-			margin-top: calc((100dvh - 4.6rem) * -1);
-/*			background-color: #fff;*/
-		}
-
-		.vertical header > .header1 .back{
-			display: block;
-		}
-
 
 		.vertical > header nav > span{
 			display: inline-block;
@@ -176,12 +126,9 @@
 		.vertical > header details li,
 		.vertical > header .back,
 		.vertical > header h3,
+		.vertical > header nav,
 		.vertical > header .fullCaption{
 			width: fit-content;
-			background-color: white;
-		}
-
-		.vertical > header nav span{
 			background-color: white;
 		}
 
@@ -210,7 +157,15 @@
 
 
 
+		.vertical header{
+			position: sticky;
+			top:4.6rem;
+/*			background-color: #fff;*/
+		}
 
+		.vertical header > .header1 .back{
+			display: block;
+		}
 
 
 
@@ -485,16 +440,6 @@
 		.dropdown[open] summary:after{
 			content:'−';
 		}
-
-		body > .vertical #white{
-/*			border: 1px solid red;*/
-			background-color: white;
-			position: absolute;
-			top:-1rem;
-			height:calc(4.6rem + 1px);
-			width:100%;
-			z-index: -1;
-		}
 	</style>
 </head>
 <body>
@@ -522,7 +467,6 @@
   				</span>
   			</div>
 		</details>
-		<div id="white"></div>
 	</header>
 
 	<main>
@@ -542,9 +486,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
+				<nav></nav>
 				<p></p>
 			</div>
-			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -678,9 +622,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
+				<nav></nav>
 				<p></p>
 			</div>
-			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -766,9 +710,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
+				<nav></nav>
 				<p></p>
 			</div>
-			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
@@ -863,9 +807,9 @@
 				<span class="back">Back</span>
 			</div>
 			<div class="header2">
+				<nav></nav>
 				<p></p>
 			</div>
-			<nav></nav>
 		</header>
 		<div class="imgGrid">
 			<figure>
